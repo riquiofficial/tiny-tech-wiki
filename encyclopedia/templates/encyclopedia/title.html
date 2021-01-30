@@ -1,0 +1,10 @@
+{% extends "encyclopedia/layout.html" %} {% block title %} Wiki - {{title}}
+{%endblock%} {% block body %} {{wiki | safe}}
+<a
+  href="{% url 'edit' title %}"
+  class="btn btn-primary"
+  style="color: rgb(240, 239, 239)"
+  >Edit</a
+>
+
+{% endblock %}
